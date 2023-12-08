@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.s1{
+				margin: 0 auto;
+				width: 1323px;
+				height: 895px;
+				background: url(img/1115201Q4-2.jpg)no-repeat;
+			}
+			.s2{
+				font-family: "楷体";
+				font-size: 32px;
+				color: red;
+			}
+			p{
+				padding-top: 300px;
+			}
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				text-decoration: none;
+				background-color: red;
+				color: white;
+				border-radius: 4px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.button:hover {
+				background-color: #45a049;
+			}
+		</style>
+	</head>
+	<body>
+		<audio loop="loop" id="backgroundMusic">
+			<source src="黄小琥 - 没那么简单.mp3"></source>
+		</audio>
+		<div class="s1">
+			<div class="s2">
+				<p>
+				      愿这个圣诞季带给你温馨和喜悦，<br />
+				      如同圣诞树上闪烁的彩灯一样。<br />
+				      愿你与亲朋好友共度美好时光，<br />
+				      分享欢笑和温暖的回忆。愿你的心充满爱和善意，<br />
+				      像圣诞树上挂满的礼物一样丰盈。祝福你在新的<br />
+				      一年中，健康、幸福、平安，圣诞快乐！
+				</p> 
+				<button class="button" onclick="playMusic()">播放音乐</button>
+			</div>
+		</div>
+		<script>
+			function playMusic() {
+				var audio = document.getElementById("backgroundMusic");
+				audio.play();
+			}
+		</script>
+	</body>
+</html>
